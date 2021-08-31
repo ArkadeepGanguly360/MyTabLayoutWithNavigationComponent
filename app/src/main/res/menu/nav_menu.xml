@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/viewPagerTab"
+        android:icon="@drawable/ic_today_unselected"
+        android:title="Today" />
+
+    <item
+        android:id="@+id/progress"
+        android:icon="@drawable/ic_progress_unselected"
+        android:title="Progress" />
+
+    <item
+        android:id="@+id/insights"
+        android:icon="@drawable/ic_insights_unselected"
+        android:title="Insights" />
+
+    <item
+        android:id="@+id/products"
+        android:icon="@drawable/ic_products_unselected"
+        android:title="Products" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/viewPagerTab">
+
+    <fragment
+        android:id="@+id/viewPagerTab"
+        android:name="com.development.mytablayoutwithnavigationcomponent.ViewPagerTabFragment"
+        android:label="fragment_view_pager_tab"
+        tools:layout="@layout/fragment_view_pager_tab" >
+        <action
+            android:id="@+id/action_viewPagerTab_to_tabThreeDetailsFragment"
+            app:destination="@id/tabThreeDetailsFragment" />
+        <action
+            android:id="@+id/action_viewPagerTab_to_tabOneDetailsFragment"
+            app:destination="@id/tabOneDetailsFragment" />
+        <action
+            android:id="@+id/action_viewPagerTab_to_tabTwoDetailsFragment"
+            app:destination="@id/tabTwoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.development.mytablayoutwithnavigationcomponent.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/insights"
+        android:name="com.development.mytablayoutwithnavigationcomponent.InsightsFragment"
+        android:label="fragment_insights"
+        tools:layout="@layout/fragment_insights" />
+    <fragment
+        android:id="@+id/products"
+        android:name="com.development.mytablayoutwithnavigationcomponent.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/progress"
+        android:name="com.development.mytablayoutwithnavigationcomponent.ProgressFragment"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.development.mytablayoutwithnavigationcomponent.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/tabOneDetailsFragment"
+        android:name="com.development.mytablayoutwithnavigationcomponent.TabOneDetailsFragment"
+        android:label="fragment_tab_one_details"
+        tools:layout="@layout/fragment_tab_one_details" >
+        <action
+            android:id="@+id/action_tabOneDetailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabTwoDetailsFragment"
+        android:name="com.development.mytablayoutwithnavigationcomponent.TabTwoDetailsFragment"
+        android:label="fragment_tab_two_details"
+        tools:layout="@layout/fragment_tab_two_details" />
+    <fragment
+        android:id="@+id/tabThreeDetailsFragment"
+        android:name="com.development.mytablayoutwithnavigationcomponent.TabThreeDetailsFragment"
+        android:label="fragment_tab_three_details"
+        tools:layout="@layout/fragment_tab_three_details" />
+</navigation>
